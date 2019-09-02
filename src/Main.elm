@@ -36,9 +36,7 @@ user2 =
 
 hello : User -> String
 hello user =
-    user.age
-        |> (<) 18
-        |> helloMessage
+    helloMessage <| (<) 18 <| user.age
 
 
 hello_ : User -> String
